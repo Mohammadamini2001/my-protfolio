@@ -10,45 +10,60 @@
     <script src="theme.js" defer></script>
 </head>
 <body>
-    <div class="menu">
-        <div class="menu-left">
-            <p id="my_name">Mohammad Amini</p>
-        </div>
-        <div class="menu-middle">
-            <ul>
-                <li><a href="home.html">Home</a></li>
+    <nav class="top-nav" aria-label="Main navigation">
+        <div class="top-nav__glass">
+            <a href="#home" class="top-nav__brand">Mohammad Amini</a>
+            <ul class="top-nav__links" id="top-nav-links">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="top-nav__actions">
+                <button class="top-nav__menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="top-nav-links" title="Menu">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme"><i class="fa fa-moon-o"></i></button>
+            </div>
         </div>
-        <div class="menu-right">
-            <ul>
-                <li><a href="https://www.facebook.com/profile.php?id=100030081051532&mibextid=ZbWKwL" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://instagram.com/mohammad_amini_11?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/mohammad-amini-2b4694259" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="https://github.com/Mohammadamini2001" target="_blank"><i class="fa fa-github"></i></a></li>
-                <li><button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme"><i class="fa fa-moon-o"></i></button></li>
-            </ul>
+    </nav>
+    <section class="home" id="home">
+        <div class="home__card">
+            <div class="home__content">
+                <p class="home__tag">Available for freelance work</p>
+                <h1 class="home__title">Web Developer crafting modern, responsive digital experiences</h1>
+                <p class="home__subtitle">I'm Mohammad Amini, a Computer Science graduate focused on clean interfaces, practical web apps, and reliable database-driven solutions using HTML, CSS, JavaScript, SQL, and Laravel.</p>
+                <div class="home__actions">
+                    <button class="home-btn home-btn--primary"><a href="images/My updated CV.jpg" download>Download Resume</a></button>
+                    <button class="home-btn home-btn--ghost"><a href="#projects">View Projects</a></button>
+                    <button class="home-btn home-btn--ghost"><a href="#contact">Contact Me</a></button>
+                </div>
+                <div class="home__chips">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>Laravel</span>
+                    <span>SQL</span>
+                </div>
+            </div>
+            <aside class="home__spotlight">
+                <img src="images/Mohammad Photo.jpg" alt="Mohammad Amini" class="home__photo">
+                <h2>Mohammad Amini</h2>
+                <p>Web Developer</p>
+                <div class="home__metrics">
+                    <div><strong>3+</strong><span>Years Learning</span></div>
+                    <div><strong>10+</strong><span>Projects Built</span></div>
+                    <div><strong>5+</strong><span>Core Technologies</span></div>
+                </div>
+            </aside>
+            <div class="home__glow home__glow--one"></div>
+            <div class="home__glow home__glow--two"></div>
+            <div class="home__grid-lines"></div>
         </div>
-    </div>
-    <div class="home">
-        <div class="home__left">
-            <img src="images/new-back.png" class="back">
-            <img src="images/me.png" class="me">
-        </div>
-        <div class="home__right">
-            <p class="hello">Hello<span>___</span></p>
-            <p class="name__dis">I'm <span>Mohammad</span></p>
-            <p class="about__dis">Computer Science graduate focused on web development and databases. <br>
-            Skilled in HTML, CSS, JavaScript, SQL, and Laravel with hands-on project experience.</p>
-            <button><a href="images/My updated CV.jpg" download>Download My Resume</a></button>
-            <div class="circle"></div>
-            <div class="small__circle"></div>
-        </div>
-        </div>
-    </div>
+    </section>
 
     <section class="about" id="about">
         <div class="about__card">

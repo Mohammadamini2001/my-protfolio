@@ -11,30 +11,27 @@
     <script src="theme.js" defer></script>
 </head>
 <body>
-    <div class="menu">
-        <div class="menu-left">
-            <p id="my_name">Mohammad Amini</p>
-        </div>
-        <div class="menu-middle">
-            <ul>
+    <nav class="menu">
+        <a href="home.html" id="my_name">Mohammad Amini</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="menu-panel">
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="menu-panel" id="menu-panel">
+            <ul class="menu-links">
                 <li><a href="home.html">Home</a></li>
-                <li><a href="">About</a></li>
+                <li><a href="home.html#about">About</a></li>
                 <li><a href="skills.html">Skills</a></li>
-                <li><a href="">My Works</a></li>
+                <li><a href="home.html#experience">Experience</a></li>
             </ul>
-        </div>
-        <div class="menu-right">
-            <ul>
-                <li><a href="https://www.facebook.com/profile.php?id=100030081051532&mibextid=ZbWKwL" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://instagram.com/mohammad_amini_11?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/mohammad-amini-2b4694259" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="https://github.com/Mohammadamini2001" target="_blank"><i class="fa fa-github"></i></a></li>
+            <ul class="menu-actions">
+                <li><a href="https://www.facebook.com/profile.php?id=100030081051532&mibextid=ZbWKwL" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://instagram.com/mohammad_amini_11?igshid=ZDdkNTZiNTM=" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/mohammad-amini-2b4694259" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/Mohammadamini2001" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa fa-github"></i></a></li>
                 <li><button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme"><i class="fa fa-moon-o"></i></button></li>
             </ul>
         </div>
-    </div>
-        </div>
-    </div>
+    </nav>
     <br>
     <div class="skills">
         <div class="skills__glass">

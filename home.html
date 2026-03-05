@@ -10,45 +10,45 @@
     <script src="theme.js" defer></script>
 </head>
 <body>
-    <div class="menu">
-        <div class="menu-left">
-            <p id="my_name">Mohammad Amini</p>
-        </div>
-        <div class="menu-middle">
-            <ul>
+    <nav class="menu">
+        <a href="home.html" id="my_name">Mohammad Amini</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="menu-panel">
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="menu-panel" id="menu-panel">
+            <ul class="menu-links">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
             </ul>
-        </div>
-        <div class="menu-right">
-            <ul>
-                <li><a href="https://www.facebook.com/profile.php?id=100030081051532&mibextid=ZbWKwL" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://instagram.com/mohammad_amini_11?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/mohammad-amini-2b4694259" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="https://github.com/Mohammadamini2001" target="_blank"><i class="fa fa-github"></i></a></li>
+            <ul class="menu-actions">
+                <li><a href="https://www.facebook.com/profile.php?id=100030081051532&mibextid=ZbWKwL" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://instagram.com/mohammad_amini_11?igshid=ZDdkNTZiNTM=" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/mohammad-amini-2b4694259" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/Mohammadamini2001" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa fa-github"></i></a></li>
                 <li><button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme"><i class="fa fa-moon-o"></i></button></li>
             </ul>
         </div>
-    </div>
-    <div class="home">
+    </nav>
+    <section class="home" id="home">
         <div class="home__left">
-            <img src="images/new-back.png" class="back">
-            <img src="images/me.png" class="me">
+            <div class="home__media">
+                <img src="images/new-back.png" class="back">
+                <img src="images/me.png" class="me">
+            </div>
+            <div class="home__right">
+                <p class="hello">Hello<span>___</span></p>
+                <p class="name__dis">I'm <span>Mohammad</span></p>
+                <p class="about__dis">Computer Science graduate focused on web development and databases. <br>
+                Skilled in HTML, CSS, JavaScript, SQL, and Laravel with hands-on project experience.</p>
+                <button><a href="images/My updated CV.jpg" download>Download My Resume</a></button>
+                <div class="circle"></div>
+                <div class="small__circle"></div>
+            </div>
         </div>
-        <div class="home__right">
-            <p class="hello">Hello<span>___</span></p>
-            <p class="name__dis">I'm <span>Mohammad</span></p>
-            <p class="about__dis">Computer Science graduate focused on web development and databases. <br>
-            Skilled in HTML, CSS, JavaScript, SQL, and Laravel with hands-on project experience.</p>
-            <button><a href="images/My updated CV.jpg" download>Download My Resume</a></button>
-            <div class="circle"></div>
-            <div class="small__circle"></div>
-        </div>
-        </div>
-    </div>
+    </section>
 
     <section class="about" id="about">
         <div class="about__card">

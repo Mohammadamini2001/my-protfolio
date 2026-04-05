@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office Database Features</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Sora:wght@300;400;500;600&display=swap');
+
+        :root {
+            --bg: #f4f6f8;
+            --surface: rgba(255, 255, 255, 0.76);
+            --border: rgba(255, 255, 255, 0.72);
+            --text: #1f2937;
+            --text-soft: #5d6778;
+            --accent: #d1b464;
+            --shadow: 0 14px 34px rgba(16, 24, 40, 0.12);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Sora", "Segoe UI", Arial, sans-serif;
+            background:
+                radial-gradient(circle at 12% 8%, rgba(209, 180, 100, 0.22), transparent 44%),
+                radial-gradient(circle at 92% 88%, rgba(72, 120, 185, 0.16), transparent 42%),
+                var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 36px 20px 48px;
+        }
+
+        .container {
+            width: min(1080px, 96%);
+            margin: 0 auto;
+        }
+
+        .hero {
+            background: linear-gradient(145deg, rgba(20, 36, 56, 0.96), rgba(45, 78, 114, 0.92));
+            color: #f8fafc;
+            border-radius: 24px;
+            padding: 28px;
+            box-shadow: var(--shadow);
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-family: "Space Grotesk", "Sora", sans-serif;
+            font-size: clamp(1.7rem, 3vw, 2.3rem);
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: rgba(248, 250, 252, 0.9);
+            line-height: 1.8;
+            max-width: 72ch;
+        }
+
+        .actions {
+            margin-top: 18px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .actions a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            height: 40px;
+            padding: 0 16px;
+            border-radius: 999px;
+            border: 1px solid rgba(255, 255, 255, 0.28);
+            text-decoration: none;
+            color: #f8fafc;
+            background: rgba(255, 255, 255, 0.09);
+            font-weight: 600;
+        }
+
+        .actions a:hover {
+            background: rgba(255, 255, 255, 0.16);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 18px;
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .card h2 {
+            font-family: "Space Grotesk", "Sora", sans-serif;
+            font-size: 1.15rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: var(--text-soft);
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+
+        .feature-list {
+            list-style: none;
+            display: grid;
+            gap: 8px;
+        }
+
+        .feature-list li {
+            position: relative;
+            padding-left: 18px;
+            line-height: 1.6;
+            color: var(--text);
+            font-size: 0.95rem;
+        }
+
+        .feature-list li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.55em;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+
+        @media (max-width: 680px) {
+            body {
+                padding: 20px 14px 34px;
+            }
+
+            .hero {
+                padding: 22px;
+            }
+
+            .card {
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <section class="hero">
+            <h1>Office Database System - Database Features</h1>
+            <p>This page lists only the data and database-related capabilities of the Office Database System, including entities, finance schema, integrity controls, reporting, and backup support.</p>
+            <div class="actions">
+                <a href="index.html#projects"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back to Projects</a>
+            </div>
+        </section>
+
+        <section class="grid" aria-label="Database feature cards">
+            <article class="card">
+                <h2>Core Data Entities</h2>
+                <ul class="feature-list">
+                    <li>Normalized records for customers, visas, and office operations.</li>
+                    <li>Structured authentication and user account data.</li>
+                    <li>Finance data entities for income, expenses, loans, and journals.</li>
+                    <li>Audit-ready data shape for key business actions.</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h2>Schema and Relationships</h2>
+                <ul class="feature-list">
+                    <li>Dedicated finance schema definitions for consistent storage.</li>
+                    <li>Relationship-friendly layout for linking customer and transaction data.</li>
+                    <li>Predictable table and field naming to simplify maintenance.</li>
+                    <li>Migration-friendly SQL structure for future expansion.</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h2>Transaction and Accounting Data</h2>
+                <ul class="feature-list">
+                    <li>Income and expense entries stored with category-level detail.</li>
+                    <li>Journal and ledger support for accounting visibility.</li>
+                    <li>Loan records with tracking and detail views.</li>
+                    <li>Personal expense tracking separated from office finance data.</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h2>Integrity and Control</h2>
+                <ul class="feature-list">
+                    <li>Period lock model to protect finalized accounting windows.</li>
+                    <li>Audit logging structure for user actions and data changes.</li>
+                    <li>Role-aware access patterns for sensitive database areas.</li>
+                    <li>Consistent read/write boundaries through route-level controls.</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h2>Reporting and Queryability</h2>
+                <ul class="feature-list">
+                    <li>Report-oriented query outputs for printable financial reports.</li>
+                    <li>Ledger and journal views driven by query-ready datasets.</li>
+                    <li>Status and dashboard pages fed by aggregated data.</li>
+                    <li>Filtering support for operational and accounting inspection.</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h2>Backup and Recovery Support</h2>
+                <ul class="feature-list">
+                    <li>SQL backup strategy supported by PowerShell backup script.</li>
+                    <li>Timestamped backup naming for recovery traceability.</li>
+                    <li>Dedicated backup folder for operational safety.</li>
+                    <li>Deployment-ready structure with environment-aware configuration.</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

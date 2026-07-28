@@ -442,7 +442,7 @@ body.theme-transitioning *{
 }
 
 .home .home__left .back{
-    height: 500px;
+    height: 600px;
     width: auto;
     position: absolute;
     top: 86px;
@@ -504,7 +504,7 @@ body.theme-transitioning *{
     align-items: flex-start;
     gap: 14px;
     padding: 54px 56px 54px 34px;
-    background: linear-gradient(155deg, var(--glass-soft) 0%, rgba(255,255,255,0.08) 55%, rgba(255,255,255,0.02) 100%);
+    background: linear-gradient(155deg, var(--glass-soft) 0%, rgba(255, 255, 255, 0.059) 55%, rgba(255, 255, 255, 0.079) 100%);
     backdrop-filter: blur(10px) saturate(180%);
     -webkit-backdrop-filter: blur(10px) saturate(180%);
     border-left: 1px solid var(--glass-border);
